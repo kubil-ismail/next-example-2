@@ -20,7 +20,7 @@ export const getServerSideProps = async (context) => {
   if (check?.data?.Record?.length > 0) {
     return {
       redirect: {
-        destination: `/${tenant}/login`,
+        destination: `/${tenant}/auth/login`,
         permanent: true,
       },
     };
